@@ -3,7 +3,7 @@ import csv
 
 def build_parser():
 	parser = argparse.ArgumentParser(
-		description='Perform a differentially private aggregation across specified data.')
+		description='Extract specified columns from a CSV file and split output based on the specified ID column.')
 	parser.add_argument('-i', '--input', action='append', required=True,
 						help='input file (or files) to process. Delimited format. For large files ' +
 						'split into chunks, list the chunks in order.')
