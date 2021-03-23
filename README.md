@@ -46,7 +46,7 @@ docker run -it -v $ABSOLUTE_PATH_INPUT_DIR:$CONTAINER_INPUT --name csv-extractor
 
 Then run the commands as above.
 
-# Build
+## Build
 To build a local python package (tested on Mac OS 10.2).
 
 ```bash
@@ -57,7 +57,7 @@ pip install --upgrade pip
 pip install --upgrade virtualenv
 pip install --upgrade build
 python3 -m build
-# This will output a Tar file in dist/pydp-cli-*.tar.gz
+# This will output a Tar file in dist/csv-extractor-*.tar.gz
 deactivate
 ```
 
@@ -78,7 +78,7 @@ docker login --username=$DOCKERHUB_USERNAME
 docker push $DOCKERHUB_USERNAME/csv-extractor
 ```
 
-# Install
+## Install
 Install from a local tar file.
 
 ```bash
